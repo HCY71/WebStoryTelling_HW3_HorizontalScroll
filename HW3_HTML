@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="HW3_CSS.css">
+<script src="HW3_JS.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div class="banner"><img class="logo" src="https://www.design-ebg.com/wp-content/uploads/2020/02/work_40_main_m.jpg" alt="" /></div>
+<div class="walker">
+  <div class="slider">
+    <div class="slide"><img src="https://www.milkshoptea.com/includes/timthumb.php?src=upload/product/1908091151450000001.png&amp;w=307&amp;zc=2" alt="" />
+      <p>大正紅茶</p>
+    </div>
+    <div class="slide"><img src="https://www.milkshoptea.com/includes/timthumb.php?src=upload/product/1908091152200000001.png&amp;w=307&amp;zc=2" alt="" />
+      <p>高峰烏龍綠</p>
+    </div>
+    <div class="slide"><img src="https://www.milkshoptea.com/includes/timthumb.php?src=upload/product/1908091153510000001.png&amp;w=307&amp;zc=2" alt="" />
+      <p>大正紅茶拿鐵</p>
+    </div>
+    <div class="slide"><img src="https://www.milkshoptea.com/includes/timthumb.php?src=upload/product/1908091155410000001.png&amp;w=307&amp;zc=2" alt="" />
+      <p>手炒黑糖鮮奶</p>
+    </div>
+    <div class="slide"><img src="https://www.milkshoptea.com/includes/timthumb.php?src=upload/product/1908091155500000001.png&amp;w=307&amp;zc=2" alt="" />
+      <p>法芙娜可可鮮奶</p>
+    </div>
+    <div class="slide"><img src="https://www.milkshoptea.com/includes/timthumb.php?src=upload/product/1908091157410000001.png&amp;w=307&amp;zc=2" alt="" />
+      <p>青檸香茶</p>
+    </div>
+  </div>
+</div>
+<div class="footer"><img src="https://foodtracer.taipei.gov.tw/Backend/upload/company/28949151/28949151_img2.png" alt="" /></div>
