@@ -1,21 +1,25 @@
-$target = $(".slider").first();
-currentPosition = parseInt($target.css("transform").split(",")[4]);
+// //For debug
+// $(window).scroll(function (e) {
+// 	console.log("walker height: ", $(".walker").css("height"));
+// 	console.log("container height: ", $(".container").css("height"));
+// 	console.log("page_position: ", $(window).scrollTop());
+// });
 
-moveBy = function (scrolledBy) {
-	currentPosition += scrolledBy;
-	$target.css("transform", "translateX(" + currentPosition + "px)");
-};
+//Change .walker height
+var menu_width = $(".menu").outerWidth();
+$(".walker").css("height", menu_width - $(".menu").outerHeight());
 
-lastScrollTop = 0;
+$(window).scroll(function (e) {
+	var page_position = $(window).scrollTop();
+	var walker_top = $(".walker").offset().top;
 
-currentPosition = isNaN(currentPosition) ? 0 : currentPosition;
-
-$(window).bind("scroll", function (e) {
-	var scrolledBy = $(window).scrollTop() - lastScrollTop;
-	moveBy(-scrolledBy);
-	lastScrollTop = $(window).scrollTop();
+	//Move .menu horizontally
+	var move = page_position - walker_top;
+	console.log("move: ", move);
+	if (move >= 0 && move <= menu_width - $(window).width()) {
+		$(".menu").css("left", -move);
+	}
 });
 
-$(window).scroll(function () {
-	console.log($(window).scrollTop());
-});
+//Scroller
+var s = skrollr.init();
